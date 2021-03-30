@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+    <link rel="stylesheet" href="stilus.css">
+</head>
+<body>
+
+<form>
+<fieldset>
+    <legend>Alapadatok</legend>
+    <table>
+        <tr>
+            <td class="elsooszlop"><label for="nev" id="egy">Teljes neved</label></td>
+            <td class="masodikoszlop"><input type="text" id="nev"></td>
+        </tr>
+        <tr>
+            <td class="elsooszlop"><label for="ferfi" for="no" id="egy">Nemed</label></td>
+            <td class="masodikoszlop">
+                <input type="radio" id="ferfi" name="gender" value="ferfi" class="pont">
+                <label for="ferfi">Férfi</label>
+                <input type="radio" id="no" name="gender" value="no" class="pont">
+                <label for="no">Nő</label>
+            </td>
+            </tr>
+            <tr>
+                <td class="elsooszlop"><label for="nev" id="egy">Email <sup>*</sup></label></td>
+                <td class="masodikoszlop"><input type="email" id="nev"></td>
+            </tr>
+            <tr>
+                <td class="elsooszlop"><label for="tel" id="egy">Telefonszám <sup>*</sup></label></td>
+                <td class="masodikoszlop"><select id="telefonegy" name="tel">
+                    <option>30</option>
+                    <option>70</option>
+                    <option>20</option>
+                    <option>50</option>
+                    <input type="tel" id="telefonketto">
+                </td>
+            </tr>
+            <tr>
+                <td class="elsooszlop"><label for="nyelv" id="egy">Levelezés <br>alapértelmezett nyelve <sup>*</sup></label></td>
+                <td class="masodikoszlop"><select id="nyelv">
+                    <option>Magyar</option>
+                    <option>Angol</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="elsooszlop"><label for="ido" id="egy">Születési idő</label></td>
+                <td><input type="number" id="ido" placeholder="Év" min="1900" max="2021">
+                    <input type="number" id="ido" placeholder="Hónap" min="1" max="12">
+                    <input type="number" id="ido" placeholder="Nap" min="1" max="31">
+                </td>
+            </tr>
+            <tr>
+                <td class="elsooszlop"><input type="submit" id="save" value="Mentés" class="save"></td>
+            </tr>
+</table>
+</fieldset>       
+</body>
+</html>
